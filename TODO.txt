@@ -1,0 +1,23 @@
+TODO:
+
+¤Smart devices:
+- Descriptive part:
+	MOSH project
+	KiCAD
+- Technical part:
+	MOSH project
+- Analytical part
+
+¤Communication
+	-ALL
+
+¤Data processing...:
+- Descriptive part:
+	TMDS
+- Technical part:
+	TMDS
+
+
+¤Innovative Project:
+	-ALL
+
