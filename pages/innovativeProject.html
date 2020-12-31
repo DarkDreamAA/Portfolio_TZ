@@ -244,6 +244,46 @@ The above copyright notice and this permission notice shall be included in all c
 
       <div class="container">
         <div class="title">
+          <h4>Wireless IO tool </h4>
+          <hr style="height:1px;border:none;color:rgb(199, 196, 192);background-color:rgb(199, 196, 192);" />
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <p style="text-align: justify; size: 16px;">
+              With one colleague, I was in charge of the communication between our gateway and the ESAO worksation.
+              Indeed on one hand we have the emission of commands from the ESAO to the test box (by way of the gateway).
+              On the other hand, we have the test box response retrieved by the gateway which send it to the ESAO workstation.
+              The communcation protocol is the IDMK3 which is based on UDP transport protocol.
+              As we can see on the class diagram, we need to create two important classes: <br/>
+                - The <b style="font-weight: bold;">IDMK3_Controller</b> used to store ESAO packets inside 
+                a buffer, make operations like sending packets and getting new packets from the workstation. 
+                Moreover it is able to establish the connection between the gateway and the workstation. <br/>
+                - The <b style="font-weight: bold;">ESAO_packet</b> which represent the format of the frames exchanged (header(s) + payload) <br/>
+            </p>
+          </div> 
+          <div class="col-lg-7">
+            <img src="../assets/img/myPictures/InnovativeProject/classdiagram.png" width="120%" > 
+          </div> 
+        </div>
+      </div>
+      <div class="container">
+        <p style="text-align: justify; size: 18px;">
+          I started by making a first version of communication via the UDP protocol using Qt network libraries. 
+          I did this work in C++ language. Having already carried out the implementation of the UDP protocol in a C-network 
+          project, I already had knowledge in the implementation stages. However, we used the principle of sockets. 
+          So I had to initially soak up the different classes and functions offered by the libraries of Qt in order to 
+          succeed in setting up the UDP communication. <br/>
+          Work to analyze and understand the documentation (provided by Sterela) regarding the different types of commands of the ESAO workstation 
+          as well as the IDMK3 protocol were important to effectively design our classes. <br/>
+          Then, it was necessary to test with an address the sending of orders in ESAO packages (then translated by the gateway).
+          It was therefore necessary to ensure that the data was formatted correctly 
+          (i.e., that they instantiated the ESAO_packet class). 
+          Further details are provided in our technical report <a href="../assets/documents/InnovativeProject/">here</a>. 
+          </p>
+      </div>
+
+      <div class="container">
+        <div class="title">
           <h4>English course</h4>
           <hr style="height:1px;border:none;color:rgb(199, 196, 192);background-color:rgb(199, 196, 192);" />
           <br/>
