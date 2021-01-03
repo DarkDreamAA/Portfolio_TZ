@@ -217,22 +217,30 @@ The above copyright notice and this permission notice shall be included in all c
             </div>
           </div>
       </div>
-      <p style="text-align: justify; text-justify: inter-word; font-size: 16px;">
-        Regarding the room environment, we chose to implement windows, doors, lamps, and an alarm as actuators. Moreover, we added temperature, light, and presence sensors.
-           For each device, we associated a Java service, which would do key operations: get the device values or states periodically. </br></br>
-          Then, we a main controller in order to be able to link the different services implemented and then carry out the necessary processing according to 
-          the selected scenarios. If I take an example, when we get the current temperature value of the room we can open the windows if it’s too hot in the room.</br></br> 
-          Nevertheless, we could not use real sensors or actuators but thanks to the OM2M platform we are able to simulate them, by creating Application Entities 
-          and Content Instances for the values. </br></br>
-        In addition, I developed a simple dashboard to be able to visualize all the information of the sensors
-        of the part as well as the state of the actuators. Below you can find an overview of the user interface.
-      </p>
-      <div class="mt-2 mb-2 mr-0">
-        <img src=" " width="80%" height="450px"> 
+      <div class="row">
+        <div class="col-lg-5"> 
+          <p style="text-align: justify; text-justify: inter-word; font-size: 16px;">
+            Regarding the room environment, we chose to implement windows, doors, lamps, and an alarm as actuators. Moreover, we added temperature, light, and presence sensors.
+               For each device, we associated a Java service, which would do key operations: get the device values or states periodically. </br></br>
+              Then, we a main controller in order to be able to link the different services implemented and then carry out the necessary processing according to 
+              the selected scenarios. If I take an example, when we get the current temperature value of the room we can open the windows if it’s too hot in the room.</br></br> 
+              Nevertheless, we could not use real sensors or actuators but thanks to the OM2M platform we are able to simulate them, by creating Application Entities 
+              and Content Instances for the values. </br></br>
+            In addition, I developed a simple dashboard to be able to visualize all the information of the sensors
+            of the part as well as the state of the actuators. Below you can find an overview of the user interface.
+            The project code is available on my github page <a href="https://github.com/Tzark-06/Projet_SOA">here</a>. 
+          </p>
+          <div class="text-center">
+            <a href="../assets/documents/middlewareAndServices/INSA_rooms_management_Zennaro_LeRoch_Licini__5ISS_B1.pdf" class="btn btn-info btn-round" style="color: white;">Report accessible here</a>
+          </div>
+        </div>
+        <div class="col-lg-7"> 
+          <div class="mt-2 mb-2 mr-0">
+            <img src="../assets/img/myPictures/middlewareAndServices/SOA/first_scenario.png" width="90%" > 
+          </div>
+        </div>
       </div>
-      <div class="text-center">
-        <a href="../assets/documents/middlewareAndServices/IoT_Middleware_Report___Thomas_Zennaro___5ISS_B1.pdf" class="btn btn-info btn-round" style="color: white;">Report accessible here</a>
-      </div> 
+       
 
       <div class="title">
         <h4 class="mt-0">Cloud and Autonomic Management</h4>
